@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1102.0" stylesheets="@resources/Stylesheet/Button.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.CreateUserController">
+   <children>
+      <VBox layoutX="574.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1102.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label text="Add User" underline="true">
+                     <font>
+                        <Font name="Cambria Italic" size="38.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/img/User.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="1102.0" style="-fx-background-color: black; -fx-border-radius: 30px;" />
+            <HBox prefHeight="501.0" prefWidth="1102.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox prefHeight="472.0" prefWidth="477.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" fillWidth="false" prefHeight="200.0" prefWidth="221.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Username:">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="220.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="usernameTxt" prefHeight="50.0" prefWidth="200.0" promptText="Enter username" VBox.vgrow="NEVER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="textfield" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" fillWidth="false" prefHeight="80.0" prefWidth="221.0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Responsibilty:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="150.0" prefWidth="220.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ChoiceBox fx:id="roleChoice" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                       <styleClass>
+                                          <String fx:value="comboBox" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </ChoiceBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="81.0" prefWidth="459.0" VBox.vgrow="NEVER">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="addUserBtn" disable="true" mnemonicParsing="false" onAction="#HandleAddAdminClicked" prefHeight="50.0" prefWidth="150.0" styleClass="yes-btn" text=" Add" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/add.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="clearTextBtn" disable="true" mnemonicParsing="false" onAction="#HandleClearClicked" prefHeight="50.0" prefWidth="150.0" styleClass="no-btn" text=" Clear" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/clear.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="57.0" prefWidth="459.0" VBox.vgrow="NEVER">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="updateUserBtn" mnemonicParsing="false" onAction="#HandleUpdateUserClicked" prefHeight="50.0" prefWidth="150.0" styleClass="yes-btn" text=" Update" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="dropUserBtn" mnemonicParsing="false" onAction="#HandleDropUserClicked" prefHeight="50.0" prefWidth="150.0" styleClass="no-btn" text=" Drop" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/drop.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="90.0" prefWidth="459.0" VBox.vgrow="NEVER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="CancelUpdateBtn" mnemonicParsing="false" onAction="#HandleCancelUpdate" prefHeight="50.0" prefWidth="329.0" styleClass="no-btn" text="Cancel" HBox.hgrow="NEVER">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="65.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="6.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="472.0" prefWidth="662.0" HBox.hgrow="NEVER">
+                     <children>
+                        <ScrollPane fitToWidth="true" prefHeight="391.0" prefWidth="449.0" styleClass="shadow">
+                           <content>
+                              <TableView fx:id="tableview" onMousePressed="#HandleTableSelected" prefHeight="389.0" prefWidth="434.0" style="-fx-font-size: 15px;" styleClass="shadow">
+                                 <columns>
+                                    <TableColumn fx:id="col_num" prefWidth="80.66665649414062" styleClass="alignCenter" text="Nº" />
+                                    <TableColumn fx:id="col_username" prefWidth="186.0" styleClass="alignCenter" text="Username" />
+                                    <TableColumn fx:id="col_role" prefWidth="147.0" styleClass="alignCenter" text="Responsibilty" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                           <VBox.margin>
+                              <Insets right="35.0" top="50.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="1102.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="SaveBtn" disable="true" mnemonicParsing="false" onAction="#HandleSaveClicked" prefHeight="50.0" prefWidth="200.0" styleClass="yes-btn" text=" Save">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="50.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/img/save.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="ResetBtn" disable="true" mnemonicParsing="false" onAction="#HandleResetClicked" prefHeight="50.0" prefWidth="200.0" styleClass="no-btn" text="Cancel Change">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/img/cancel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

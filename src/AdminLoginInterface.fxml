@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="803.0" stylesheets="@resources/Stylesheet/DefaultStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerInterface">
+   <children>
+      <ImageView fitHeight="571.0" fitWidth="803.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@resources/Background/Background.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="571.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="198.0" fitWidth="265.0" layoutX="137.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@resources/Background/3cupsBG.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="114.0" fitWidth="157.0" layoutX="181.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/Background/donuts.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="adminUsernameTextField" alignment="CENTER" layoutX="90.0" layoutY="238.0" prefHeight="42.0" prefWidth="304.0" promptText="username" styleClass="usernameTextfield" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="adminPasswordField" alignment="CENTER" layoutX="90.0" layoutY="313.0" prefHeight="39.0" prefWidth="303.0" promptText="password" styleClass="passwordfield" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></PasswordField>
+                  <Label fx:id="invalidLoginLabel" alignment="CENTER" layoutX="110.0" layoutY="209.0" styleClass="invalidlabel" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="117.0" styleClass="adminLoginLabel" text="Admin Login" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0">
+                     <font>
+                        <Font name="System Italic" size="45.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButton" alignment="CENTER" defaultButton="true" layoutX="180.0" layoutY="424.0" mnemonicParsing="false" onAction="#HandleAdminLoginClicked" prefHeight="38.0" prefWidth="134.0" styleClass="loginButton" text="Login" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="backButton" fitHeight="52.0" fitWidth="28.0" layoutX="10.0" layoutY="14.0" onMouseClicked="#HandleGoBackClicked" pickOnBounds="true" preserveRatio="true" smooth="false" styleClass="goBackButton" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@resources/Background/backIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

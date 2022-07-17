@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="803.0" stylesheets="@resources/Stylesheet/DefaultStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerInterface">
+   <children>
+      <ImageView fitHeight="571.0" fitWidth="803.0" layoutX="4.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@resources/Background/Background.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="571.0" prefWidth="534.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="OrderButton" alignment="CENTER" layoutX="54.0" layoutY="409.0" mnemonicParsing="false" onAction="#HandleOrderButtonClicked" prefHeight="74.0" prefWidth="382.0" styleClass="orderButton" text="Make an Order" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="52.0">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="adminIcon" fitHeight="52.0" fitWidth="28.0" layoutX="10.0" layoutY="14.0" onMouseClicked="#HandleAdminIconClicked" pickOnBounds="true" preserveRatio="true" smooth="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@resources/Background/adminIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="54.0" layoutY="57.0" prefHeight="103.0" prefWidth="367.0" styleClass="welcometo" text="Welcome">
+                     <font>
+                        <Font size="96.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="99.0" layoutY="139.0" prefHeight="75.0" prefWidth="55.0" styleClass="welcometo" text="to">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="124.0" layoutY="155.0" prefHeight="87.0" prefWidth="338.0" styleClass="spectrecafe" text="Spectre">
+                     <font>
+                        <Font size="78.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="233.0" layoutY="234.0" prefHeight="79.0" prefWidth="238.0" styleClass="spectrecafe" text="café">
+                     <font>
+                        <Font size="78.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

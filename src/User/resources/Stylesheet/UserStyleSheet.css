@@ -1,0 +1,135 @@
+@font-face {
+    -fx-font-family: 'Brush Script MT'; src: url('Font/BRUSHSCI.TTF');
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-fruit-card{
+    -fx-background-color: linear-gradient(to bottom right, #322626 0%, #6f4e37 100%);
+    -fx-background-radius: 30;
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-background-radius: 30;
+    -fx-font-size: 18px;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+.add-btn:hover{
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to bottom, #ffffff 0%, #999966 100%);
+    -fx-background-radius: 100;
+}
+
+.reset-btn {
+    -fx-background-color: linear-gradient(to bottom right, #ff3300 0%, #ff99cc 100%);
+    -fx-background-radius: 100;
+}
+.reset-btn:hover {
+    -fx-cursor: hand;
+    -fx-background-radius: 100;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.purchase-btn {
+    -fx-background-color: linear-gradient(to bottom right, #cc6600 0%, #ff9966 100%);
+    -fx-background-radius: 100;
+}
+.purchase-btn:hover {
+    -fx-cursor: hand;
+    -fx-background-radius: 100;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.undo-btn {
+    -fx-background-color: linear-gradient(to bottom right, #ff9933 0%, #ffcccc 100%);
+    -fx-background-radius: 100;
+}
+.undo-btn:hover {
+    -fx-cursor: hand;
+    -fx-background-radius: 100;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.fruit-item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.fruit-item:hover{
+    -fx-cursor: hand;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.table-view {
+    -fx-background-color: linear-gradient(to bottom right, #322626 0%, #6f4e37 100%);
+    -fx-background-radius: 14 14 0 0;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #322626 0%, #6f4e37 100%);
+    -fx-background-radius: 14;
+    -fx-background-insets: 0 0 10 0;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler{
+    -fx-size: 50px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-background-color: rgb(0, 0, 0);
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.alignCenter{
+    -fx-alignment: center;
+}
+
+.thx {
+    -fx-font-family: 'Brush Script MT';
+}
+
+.back:hover {
+    -fx-cursor: hand;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}

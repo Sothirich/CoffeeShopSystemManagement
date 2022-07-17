@@ -1,0 +1,74 @@
+
+@font-face {
+    -fx-font-family: 'Brush Script MT'; src: url('Font/BRUSHSCI.TTF');
+}
+@font-face {
+    -fx-font-family: 'georgia'; src: url('Font/georgia.ttf');
+}
+
+.spectrecafe{
+    -fx-font-family: 'georgia';
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); 
+}
+
+.welcometo {
+    -fx-font-family: 'Brush Script MT';
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.adminLoginLabel {
+    -fx-font-family: 'georgia', italic;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.usernameTextfield {
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.invalidlabel{
+    -fx-font-family: 'georgia';
+    -fx-text-fill: red;
+}
+
+.passwordfield {
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.goBackButton{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.loginButton{
+    -fx-text-fill:#ffffff;
+    -fx-background-radius: 30;
+    -fx-background-color: #a08673;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.loginButton:hover{
+    -fx-text-fill:#ffffff;
+    -fx-background-color: linear-gradient(to top left, #654335, #8f7d6c);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.loginButton:pressed{
+    -fx-font-size: 17px;
+}
+
+.loginButton:disabled{
+    -fx-font-size: 17px;
+}
+
+.orderButton{
+    -fx-text-fill:#ffffff;
+    -fx-background-radius: 30;
+    -fx-background-color: #a08673;
+}
+
+.orderButton:hover{
+    -fx-cursor: hand;
+    -fx-background-color: linear-gradient(to top left, #654335, #8f7d6c);
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}

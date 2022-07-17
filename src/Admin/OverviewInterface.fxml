@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1102.0" stylesheets="@resources/Stylesheet/Button.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.OverviewController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="690.0" prefWidth="1102.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1102.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Label text="Overview" underline="true">
+                           <font>
+                              <Font name="Cambria Italic" size="38.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/img/overview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="2.0" prefWidth="1102.0" style="-fx-background-color: black; -fx-border-radius: 30px;" />
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="103.0" prefWidth="1102.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="120.0" />
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0); -fx-background-color: #e9e9e9; -fx-background-radius: 15px;" styleClass="hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="totalSaleLabel" text="20" textFill="ORANGE">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Calibri Bold" size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Sales">
+                                             <font>
+                                                <Font name="Calibri" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" fillHeight="false" prefHeight="103.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" smooth="false" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@resources/img/coffee.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="87.0" prefWidth="50.0" HBox.hgrow="NEVER" />
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0); -fx-background-color: #e9e9e9; -fx-background-radius: 15px;" styleClass="hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="totalCustomerLabel" text="20" textFill="ORANGE">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Calibri Bold" size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Customers">
+                                             <font>
+                                                <Font name="Calibri" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@resources/img/customer.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="87.0" prefWidth="50.0" />
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0); -fx-background-color: #e9e9e9; -fx-background-radius: 15px;" styleClass="hbox" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="totalEarnLabel" text="20" textFill="ORANGE">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Calibri Bold" size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Earning">
+                                             <font>
+                                                <Font name="Calibri" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@resources/img/money.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="120.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="68.0" prefWidth="1102.0">
+                           <children>
+                              <Label text="Sale Statistic" underline="true">
+                                 <font>
+                                    <Font name="System Italic" size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="319.0" prefWidth="1102.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" fillHeight="false" prefHeight="262.0" prefWidth="926.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <AreaChart fx:id="areaChart" alternativeRowFillVisible="false" animated="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" prefHeight="283.0" prefWidth="792.0" styleClass="hbox" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                       <HBox.margin>
+                                          <Insets right="30.0" />
+                                       </HBox.margin>
+                                    </AreaChart>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER_LEFT" prefHeight="319.0" prefWidth="110.0" HBox.hgrow="NEVER">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                                       <children>
+                                          <RadioButton fx:id="radioDay" mnemonicParsing="false" onAction="#HandleSortByDay" text="Day">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                                       <children>
+                                          <RadioButton fx:id="radioMonth" mnemonicParsing="false" onAction="#HandleSortByMonth" text="Month">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+                                       <children>
+                                          <RadioButton fx:id="radioYear" mnemonicParsing="false" onAction="#HandleSortByYear" text="Year">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </HBox>
+                                    <HBox fillHeight="false" prefHeight="82.0" prefWidth="295.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

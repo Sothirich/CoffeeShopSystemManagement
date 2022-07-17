@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1102.0" stylesheets="@resources/Stylesheet/AdminStyle.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.UpdateDrinkController">
+   <children>
+      <VBox layoutX="574.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1102.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label text="Update Drink" underline="true">
+                     <font>
+                        <Font name="Cambria Italic" size="38.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/img/update.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="2.0" prefWidth="1102.0" style="-fx-background-color: black; -fx-border-radius: 30px;" />
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="574.0" prefWidth="388.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="140.0">
+                                 <children>
+                                    <Label text="Drink Name:">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="1.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <TextField fx:id="DrinkNameTxt" prefHeight="50.0" prefWidth="200.0" promptText="Drink Name" VBox.vgrow="NEVER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="textfield" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="140.0">
+                                 <HBox.margin>
+                                    <Insets left="1.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Hot Price:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <TextField fx:id="HotPricetxt" prefHeight="50.0" prefWidth="200.0" promptText="1.00" VBox.vgrow="NEVER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="textfield" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="140.0">
+                                 <HBox.margin>
+                                    <Insets left="1.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Ice Price:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <TextField fx:id="IcedPricetxt" prefHeight="50.0" prefWidth="200.0" promptText="1.25" VBox.vgrow="NEVER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="textfield" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="140.0">
+                                 <HBox.margin>
+                                    <Insets left="1.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Frappe Price:">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="SOMETIMES">
+                                 <children>
+                                    <TextField fx:id="FrappeePricetxt" prefHeight="50.0" prefWidth="200.0" promptText="1.50" VBox.vgrow="NEVER">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="textfield" />
+                                          <String fx:value="shadow" />
+                                          <String fx:value="alignCenter" />
+                                       </styleClass>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="352.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="addDrinkBtn" disable="true" mnemonicParsing="false" onAction="#HandleAddDrinkClicked" prefHeight="50.0" prefWidth="150.0" styleClass="undo-btn" text=" Add" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/add.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="clearTextBtn" disable="true" mnemonicParsing="false" onAction="#HandleClearClicked" prefHeight="50.0" prefWidth="150.0" styleClass="reset-btn" text=" Clear" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/clear.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="352.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="updateDrinkBtn" mnemonicParsing="false" onAction="#HandleUpdateDrinkClicked" prefHeight="50.0" prefWidth="150.0" styleClass="purchase-btn" text=" Update" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/update.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="dropDrinkBtn" mnemonicParsing="false" onAction="#HandleDropDrinkClicked" prefHeight="50.0" prefWidth="150.0" styleClass="undo-btn" text=" Drop" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@resources/img/drop.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="66.0" prefWidth="388.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="CancelUpdateBtn" mnemonicParsing="false" onAction="#HandleCancelUpdate" prefHeight="50.0" prefWidth="318.0" styleClass="reset-btn" text="Cancel" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="388.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="574.0" prefWidth="701.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fitToWidth="true" prefHeight="406.0" prefWidth="750.0" styleClass="shadow">
+                           <content>
+                              <TableView fx:id="tableview" onMousePressed="#HandleTableSelected" prefHeight="401.0" prefWidth="583.0" styleClass="shadow">
+                                 <columns>
+                                    <TableColumn fx:id="col_num" prefWidth="80.66665649414062" sortable="false" styleClass="alignCenter" text="Nº" />
+                                    <TableColumn fx:id="col_drink" prefWidth="224.33331298828125" sortable="false" styleClass="alignCenter" text="Drink" />
+                                    <TableColumn fx:id="col_hotType" prefWidth="122.0" sortable="false" styleClass="alignCenter" text="Hot $" />
+                                    <TableColumn fx:id="col_icedType" prefWidth="122.0" styleClass="alignCenter" text="Iced $" />
+                                    <TableColumn fx:id="col_frappeeType" prefWidth="122.0" sortable="false" styleClass="alignCenter" text="Frappee $" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                           <VBox.margin>
+                              <Insets right="35.0" top="15.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="64.0" prefWidth="1102.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="SaveBtn" disable="true" mnemonicParsing="false" onAction="#HandleSaveClicked" prefHeight="50.0" prefWidth="200.0" styleClass="purchase-btn" text=" Save">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="50.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/img/save.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="ResetBtn" disable="true" mnemonicParsing="false" onAction="#HandleResetClicked" prefHeight="50.0" prefWidth="200.0" styleClass="reset-btn" text="Cancel Change">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/img/cancel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
